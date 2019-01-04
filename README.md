@@ -1,37 +1,38 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## 06-event-driven-apps
 
-### Author: Student/Group Name
+### Author: Jacob Anderson
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [repo](https://github.com/1anderson2jacob/06-event-driven-apps/pull/1)
+* [travis](https://www.travis-ci.com/1anderson2jacob/06-event-driven-apps)
 
 ### Modules
-#### `modulename.js`
+#### `event.js`
+#### `logger.js`
+
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `alterFile(file)`
+used in app.js to alter file. Reads, converts buffer to text, then writes
 
-###### `bar(array) -> array`
-Usage Notes or examples
+###### `events`
+pulls in node events
+
+###### `logger.save`
+used as a callback in an event listener, listening for 'file-save'
+
+###### `logger.err`
+used as a callback in an event listener, listening for 'file-error'
 
 ### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* `node app.js`
+* Endpoint: ` <file-name>`
+  * Rewrites the target file in all caps.
 
 #### Tests
 * How do you run tests?
